@@ -1,0 +1,75 @@
+.menu
+{
+	display : flex;
+	list-style-type : none;
+	justify-content : space-around;
+	padding : 2% 0% 2% 0%;
+	background-color : rgba(20,56,127,1);
+	position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    color : #fff;
+    font-size : 100%;
+}
+
+.menu a{
+	color : #fff;
+}
+
+.menu a:hover{
+	text-decoration : overline;
+	color : rgba(217,26,85,0.7);
+}
+
+.menu a:active{
+	text-decoration : overline;
+	color : rgba(217,26,85,0.7);
+}
+nav > ul{
+	margin : 0px;
+	padding : 0px;
+}
+
+nav li{
+	list-style-type : none;
+}
+
+.submenu{
+	display : none;
+	top : 0;
+	background-color : rgba(20,56,127,1);
+	border-radius : 5%;
+	font-size : 80%;
+}
+
+nav > ul > li{
+	float : left;
+	position : relative;
+}
+
+nav > ul ::after{
+	content : "";
+	display : block;
+	clear : both;
+}
+
+nav li:hover .submenu{
+	display : inline-block;
+	position : absolute;
+	top : 100%;
+	left : 0px;
+	padding: 0px;
+	z-index : 100000;
+}
+
+.submenu li{
+	border-bottom : 1px solid #ccc;
+}
+
+.submenu li a{
+	padding-left : -20%;
+	padding-right : 20px;
+	padding-top : 20px;
+	margin-bottom : -20%;
+	width : 300px;
+}

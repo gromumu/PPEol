@@ -1,0 +1,145 @@
+body
+{
+	background-image :  linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),url("../medias/MJtsvfmz.jpeg");
+	background-attachment : fixed;
+	font-color : #fff;
+	background-position : center;
+	background-repeat: no-repeat;
+	background-size : 100%;
+}
+
+.main
+{
+	margin-top : 5.9%;
+	width : 100%;
+	text-align: center;
+}
+
+.header
+{
+	background-color : rgba(255,255,255,1);
+	margin-bottom : 10%;
+}
+
+.header a{
+	color : rgba(215,3,28);
+}
+
+.header a:hover{
+	color : rgba(215,3,28);
+	text-decoration : underline;
+}
+
+.logo
+{
+	width : 20%;
+	height : auto;
+}
+
+.espaceabonnes
+{
+	display : flex;
+	justify-content : space-around;
+}
+
+.inscription, .connexion,  .textcontact, .messagecontact, .connexionadmin, .lien_boutique_accueil, 
+.formulaireContact, .integrationProduit, .supprimermessage, .supprimerproduit, .integrationCategorie
+
+{
+	background-color : rgba(215,3,28,0.7);
+	border : 5px solid rgba(20,56,127,0.7);
+	border-radius : 10px;
+	padding : 1%;
+	color : #fff;
+}
+
+.connexion
+{
+	margin-bottom : 13%;
+}
+
+.footer
+{
+	margin-top : 10%;
+	background-color : rgba(20,56,127,0.7);
+    padding-top : 1%;
+    padding-bottom : 1px;
+    color : #FFF;
+}
+.footer a, .footer a:hover
+{
+	color : #fff;
+}
+
+
+.banniere{
+	background-color : rgba(215,3,28,0.7);
+	margin-top : -10%;
+	margin-bottom : 15%;
+	color : #fff;
+	padding : 1% 0% 1% 0%;
+}
+
+.inscription h3, .connexion h3, .banniere h3, .textcontact h3, 
+.formulaireContact h3, .integrationProduit h3, .supprimermessage h3, .supprimerproduit h3, .integrationCategorie h3
+{
+	font-family : 'Impact', fantasy;
+	color : #fff;
+}
+
+input
+{
+	border : 1px solid #111;
+	border-radius : 5px;
+}
+
+ #map
+ {
+ 	height : 300px;
+ 	width : 50%;
+ 	margin-right : 7.5%;
+ 	margin-left : 7.5%;
+ }
+
+ .contact
+ {
+ 	display : flex;
+ 	justify-content : space-around;
+ }
+
+ .textcontact
+ {
+ 	text-align : left;
+ 	margin-left : 7.5%;
+	margin-bottom : 13%;
+ }
+
+ .formulaireContact, .integrationProduit, .supprimermessage, .supprimerproduit, .integrationCategorie
+ {
+ 	margin-left : 25%;
+ 	margin-right : 25%;
+ 	text-align : left;
+ }
+
+ .textcontact input
+ {
+ 	margin : 300px;
+ }
+
+.connexionadmin
+{
+ 	margin-left : 30%;
+ 	margin-right : 30%;
+}
+
+.lien_boutique_accueil
+{
+	margin-left : 15%;
+ 	margin-right : 15%;
+ 	margin-top : 10%;
+}
+
+.messagecontact
+{
+	margin-bottom : 50%;
+}
