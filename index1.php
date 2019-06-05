@@ -175,7 +175,7 @@
 						$message = $_POST['messagecontact'];
 						$idMembre = $_SESSION['idMembre'];
 
-						$envoyer_message = $unControleur_message -> envoyer_message($nom, $prenom, $email, $theme, $message, $idMembre);
+						$envoyer_message = $unControleur_message->envoyer_message($nom, $prenom, $email, $theme, $message, $idMembre);
 					}
 				} else{
 					if(isset($_POST['envoyermessage']))
@@ -187,7 +187,7 @@
 						$message = $_POST['messagecontact'];
 						$idMembre = 3;
 
-						$envoyer_message = $unControleur_message -> envoyer_message($nom, $prenom, $email, $theme, $message, $idMembre);
+						$envoyer_message = $unControleur_message->envoyer_message($nom, $prenom, $email, $theme, $message, $idMembre);
 					}
 				}
 
@@ -201,7 +201,7 @@
 					$emailAdmin = $_POST['emailAdmin'];
 					$mdpAdmin = $_POST['mdpAdmin'];
 					 
-					$Administrateurs = $unControleur_admin-> connexionAdmin($emailAdmin, $mdpAdmin);
+					$Administrateurs = $unControleur_admin->connexionAdmin($emailAdmin, $mdpAdmin);
 											
 					if($Administrateurs['nb'] == 1){
 					
@@ -219,11 +219,11 @@
 			break;
 
 			case 16 : 
-			$afficher_message=$unControleur_message -> afficher_message();
+			$afficher_message=$unControleur_message->afficher_message();
 			include("vue/vueMessage.php"); break;
 
 			case 17 : 
-			$afficher_produit=$unControleur_boutique -> afficher_produit();
+			$afficher_produit=$unControleur_boutique->afficher_produit();
 
 			include("vue/vueBoutiqueAdmin.php");
 

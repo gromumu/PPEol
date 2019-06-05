@@ -250,15 +250,23 @@
 
 				}
 
-				if(isset($_POST['ajouterCategorie'])){			
-					$libelle = $_POST['libelleCategorie'];
-					$ajouter_categorie=$unControleur_boutique->ajouter_categorie($libelle);
-					header('Location : index.php?page=17');
-				}
-
 				if(isset($_POST['supprimerproduit'])){
 					$unControleur_boutique->supprimer_produit($_POST);
 					header('Location: index.php?page=17');
+				}
+
+				if(isset($_POST['ajouterCategorie'])){			
+					$libelle = $_POST['libelleCategorie'];
+					$ajouter_categorie=$unControleur_boutique->ajouter_categorie($libelle);
+
+					header('Location: index.php?page=17');
+				}
+
+				if(isset($_POST['supprimercategorie'])){
+					$unControleur_boutique->supprimer_categorie($_POST);
+					
+					header('Location: index.php?page=17');
+
 				}
 
 			}

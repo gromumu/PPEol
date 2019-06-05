@@ -42,6 +42,11 @@
 			$this->unModeleBoutique->supprimer_produit($tab);
 		}
 
+		public function supprimer_categorie($tab)
+		{
+			$this->unModeleBoutique->supprimer_categorie($tab);
+		}
+
 		public function nb_produits()
 		{
 			return $this->unModeleBoutique->nb_produits();

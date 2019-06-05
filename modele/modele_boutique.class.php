@@ -85,6 +85,18 @@
 	 		}
 	 	}
 
+	 	public function supprimer_categorie($tab)
+	 	{
+	 		$requete="delete from categorie where idcategorie = :idcategorie;";
+	 		if($this->pdo == null){
+	 			return null;
+	 		} else {
+	 			$donnees = array(":idcategorie"=>$tab['idcategorie']);
+	 			$select = $this->pdo->prepare($requete);
+	 			$select->execute($donnees);
+	 		}
+	 	}
+
 	 	public function nb_produits(){
 	 		$requete="select * from nb_produits;";
 

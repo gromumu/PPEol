@@ -68,6 +68,28 @@
 </div>
 <br><br><br>
 
+<center>
+<div class='col-md-6'>
+	<table class="table table-striped table-dark">
+		
+		<tr><td>ID Categorie</td><td>Libelle</td></tr>
+
+		<?php
+
+		foreach($afficher_categorie as $uneCategorie){
+			echo"
+				<tr>
+					<td>".$uneCategorie['idcategorie']."</td>
+					<td>".$uneCategorie['libelle']."</td>
+				</tr>
+				";
+			}	
+		?>
+	</table>
+</div>
+</center>
+
+
 <div class="integrationCategorie">
 <center>
 	<h2>Ajouter une Categorie</h2>
@@ -79,7 +101,20 @@
 	</form>
 </center>
 </div>
+<br><br><br>
 
+<div class="supprimercategorie">
+	<center>
+	<h2>Supprimer une categorie</h2>
+	<table>
+		<tr><form method="post" action="index.php?page=17">
+		<td><h3>ID Categorie</h3></td><td> <input type="text" name="idcategorie" placeholder="exemple : 1"></td></tr>
+
+		<tr><td></td><td><input type="submit" name="supprimercategorie" value="Supprimer"></td></tr>
+		</form>
+	</table>
+	</center>
+</div>
 
 
 

@@ -43,7 +43,7 @@ body
 }
 
 .inscription, .connexion,  .textcontact, .messagecontact, .connexionadmin, .lien_boutique_accueil, 
-.formulaireContact, .integrationProduit, .supprimermessage, .supprimerproduit, .integrationCategorie
+.formulaireContact, .integrationProduit, .supprimermessage, .supprimerproduit, .integrationCategorie, .supprimercategorie
 
 {
 	background-color : rgba(215,3,28,0.7);
@@ -81,7 +81,8 @@ body
 }
 
 .inscription h3, .connexion h3, .banniere h3, .textcontact h3, 
-.formulaireContact h3, .integrationProduit h3, .supprimermessage h3, .supprimerproduit h3, .integrationCategorie h3
+.formulaireContact h3, .integrationProduit h3, .supprimermessage h3, 
+.supprimerproduit h3, .integrationCategorie h3, .supprimercategorie h3
 {
 	font-family : 'Impact', fantasy;
 	color : #fff;
@@ -114,7 +115,7 @@ input
 	margin-bottom : 13%;
  }
 
- .formulaireContact, .integrationProduit, .supprimermessage, .supprimerproduit, .integrationCategorie
+ .formulaireContact, .integrationProduit, .supprimermessage, .supprimerproduit, .integrationCategorie, .supprimercategorie
  {
  	margin-left : 25%;
  	margin-right : 25%;
